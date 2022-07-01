@@ -1,16 +1,7 @@
-html {
-    touch-action: manipulation;
-}
-
-.wrapper-container {
-    display: inline-block;
-}
-
 .tetris-container {
     display: flex;
     flex-direction: row;
-    margin: 10px;
-    background-color: #333333;
+    background-color: #EEEEEE;
 }
 
 .tetris-panel-container {
@@ -18,8 +9,8 @@ html {
     padding-left: 10px;
     padding-right: 10px;
     flex-direction: column;
-    color: white;
-    background-color: #333333;
+    background-color: #EEEEEE;
+    border-radius: 1vw;
 }
 
 .tetris-panel-container-padding {
@@ -33,12 +24,14 @@ html {
 
 .tetris-button-panel {
     border-style: none;
-    width: 100%;
+    width: 30vw;
+    height: 30vw;
 }
 
 .tetris-button {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    background: #444444;
+    background-color: #88EEff;
+    color: white;
 }

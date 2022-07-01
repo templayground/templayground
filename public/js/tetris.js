@@ -12,6 +12,7 @@ class Tetris {
         this.blocks = this.createBlocks();
         this.deletedLines = 0;
 
+        // キーボード入力取得
         window.onkeydown = (e) => {
             if (e.keyCode === 37) {
                 this.moveLeft();
@@ -24,6 +25,7 @@ class Tetris {
             }
         }
 
+        // 移動ボタンが押された時
         document.getElementById("tetris-move-left-button").onmousedown = (e) => {
             this.moveLeft();
         }
@@ -314,7 +316,7 @@ class Tetris {
 
     clear(canvas) {
         let context = canvas.getContext("2d");
-        context.fillStyle = "rgb(0, 0, 0)";
+        context.fillStyle = "rgb(30, 30, 30)";
         context.fillRect(0, 0, canvas.width, canvas.height);
     }
 }
