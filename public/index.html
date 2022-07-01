@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- local style sheets -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/tetris.css">
+    <script type="text/javascript" src="./js/tetris.js"></script>
+
+    <title>Snow Land</title>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="header">
+            <p>ちょっとゲームが作りたくてね。</p>
+        </div>
+        
+        <!-- main -->
+        <div class="main">
+            <div class="wrapper-container">
+                <span class="tetris-container">
+                    <canvas id="stage" width="250px" height="500px" style="background-color:black;">
+                    </canvas>
+                    <span class="tetris-panel-container">
+                      <p>Next:</p>
+                        <canvas id="next" width="150px" height="150px" style="background-color:black;">
+                        </canvas>
+                      <p>LINES:<span id="lines">0</span></p>
+                      <p><span id="message"></span></p>
+                      <div class="tetris-panel-container-padding"></div>
+                      <table class="tetris-button-panel">
+                        <tr>
+                          <td></td>
+                          <td id="tetris-rotate-button" class="tetris-button">↻</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td id="tetris-move-left-button"class="tetris-button">←</td>
+                          <td id="tetris-fall-button"class="tetris-button">↓</td>
+                          <td id="tetris-move-right-button"class="tetris-button">→</td>
+                        </tr>
+                      </table>
+                    </span>
+                </span>
+            </div>
+            <script>
+              var tetris = new Tetris();
+              tetris.startGame();
+            </script>
+        </div>
+        
+        <!-- footer -->
+        <div class="footer">
+
+        </div>
+    </div>
+
+    <script src="./js/function.js"></script>
+</body>
+</html>
