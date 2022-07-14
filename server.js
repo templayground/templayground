@@ -19,5 +19,5 @@ const PORT = env.PORT || 3000;
 
 app.use(express.static(__dirname + "/public"))
 
-// start server
-server.listen(PORT, () => {console.log("Server running at http://18.116.79.97:%d", PORT)});
+// start server at http://18.116.79.97:3000
+server.listen(PORT, () => {console.log("Test running at http://localhost:%d", PORT)});
